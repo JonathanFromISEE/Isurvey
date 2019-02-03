@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="BienvenueCard"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ISurvey"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="1100" Margin="10">
+    <materialDesign:Card>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90" />
+                <RowDefinition Height="160" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+            <StackPanel Margin="15">
+                <WrapPanel>
+                    <TextBlock FontWeight="DemiBold" FontSize="24">Bienvenue sur</TextBlock>
+                    <TextBlock FontWeight="DemiBold" FontSize="24" Foreground="#FFE14045" Margin="5,0,0,0">ISurvey</TextBlock>
+                    <TextBlock FontWeight="DemiBold" FontSize="24" Margin="5,0,0,0"> !</TextBlock>
+                </WrapPanel>
+                <TextBlock FontSize="16">Concevez votre premier sondage et collectez rapidement des données en suivant ce quelques étapes.</TextBlock>
+            </StackPanel>
+            <Grid Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="FileOutline"  VerticalAlignment="Center" Foreground="#FF1875D1"/>
+                    </Border>
+                    <TextBlock FontWeight="Bold" FontSize="18" HorizontalAlignment="Center">1. Créer</TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center">Créez un sondage ou un formulaire mobile en quelques minutes.</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="Mobile"  VerticalAlignment="Center" Foreground="#FFF9B325"/>
+                    </Border>
+                    <TextBlock FontWeight="Bold" FontSize="18" HorizontalAlignment="Center">2. Tester</TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center">Synchronisez votre sondage sur votre tablette ou smartphone afin de le tester.</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="Bullseye"  VerticalAlignment="Center" Foreground="#FF4F9D00"/>
+                    </Border>
+                    <TextBlock FontWeight="Bold" FontSize="18" HorizontalAlignment="Center">3. Publier et recueillir</TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center">Publiez votre sondage pour commencer à recueillir des données.</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="3">
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="Child"  VerticalAlignment="Center" Foreground="#FF404040"/>
+                    </Border>
+                    <TextBlock FontWeight="Bold" FontSize="18" HorizontalAlignment="Center">4. Consulter et analyser</TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center">Examinez et analysez vos réponses.</TextBlock>
+                </StackPanel>
+            </Grid>
+            <Button Grid.Row="2" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="180" Height="50" FontSize="24" ToolTip="Débuter la création d'un sondage" Click="Button_Click">
+                C'est parti !
+            </Button>
+            <StackPanel Grid.Row="3">
+                <Border BorderBrush="#FF04111F" Height="1" BorderThickness="1" />
+                <WrapPanel>
+                    <Border BorderBrush="{x:Null}" Height="30" Margin="15">
+                        <fa:ImageAwesome Icon="Briefcase"  VerticalAlignment="Center" Foreground="#FFF9B325"/>
+                    </Border>
+                    <TextBlock TextWrapping="WrapWithOverflow" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">Réalisez chacune de ces étapes afin de débloquer d'autres conseils sur le recueil d'informations et le déclenchement des automatisations.</TextBlock>
+                </WrapPanel>
+                
+            </StackPanel>
+        </Grid>
+    </materialDesign:Card>
+</UserControl>

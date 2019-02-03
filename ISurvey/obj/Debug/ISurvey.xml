@@ -1,0 +1,203 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ISurvey
+</name>
+</assembly>
+<members>
+<member name="T:ISurvey.My.MyWpfExtension">
+ <summary>
+ Module utilisé pour définir les propriétés qui sont disponibles dans l'espace de noms My pour WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ISurvey.My.MyWpfExtension.Application">
+ <summary>
+ Retourne l'objet application pour l'application en cours d'exécution
+ </summary>
+</member>
+<member name="P:ISurvey.My.MyWpfExtension.Computer">
+ <summary>
+ Retourne les informations relatives à l'ordinateur hôte.
+ </summary>
+</member>
+<member name="P:ISurvey.My.MyWpfExtension.User">
+ <summary>
+ Retourne les informations relatives à l'utilisateur actuel.  Si vous souhaitez exécuter l'application avec les 
+ informations d'identification de l'utilisateur Windows, appelez My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:ISurvey.My.MyWpfExtension.Log">
+ <summary>
+ Retourne le journal des applications. L'écouteur peut être configuré par le fichier de configuration de l'application.
+ </summary>
+</member>
+<member name="P:ISurvey.My.MyWpfExtension.Windows">
+ <summary>
+ Retourne la collection de fenêtres définie dans le projet.
+ </summary>
+</member>
+<member name="T:ISurvey.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ISurvey.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ISurvey.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ISurvey.BienvenueCard">
+<summary>
+BienvenueCard
+</summary>
+</member>
+<member name="M:ISurvey.BienvenueCard.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.DashBoard">
+<summary>
+DashBoard
+</summary>
+</member>
+<member name="M:ISurvey.DashBoard.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.SondagesActifsCard">
+<summary>
+SondagesActifsCard
+</summary>
+</member>
+<member name="M:ISurvey.SondagesActifsCard.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.SondagesRecentsCard">
+<summary>
+SondagesRecentsCard
+</summary>
+</member>
+<member name="M:ISurvey.SondagesRecentsCard.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.UtilisateursActifsCard">
+<summary>
+UtilisateursActifsCard
+</summary>
+</member>
+<member name="M:ISurvey.UtilisateursActifsCard.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.SondageEditor">
+<summary>
+SondageEditor
+</summary>
+</member>
+<member name="M:ISurvey.SondageEditor.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.Sondages">
+<summary>
+Sondages
+</summary>
+</member>
+<member name="M:ISurvey.Sondages.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.SondagesWizard1">
+<summary>
+SondagesWizard1
+</summary>
+</member>
+<member name="M:ISurvey.SondagesWizard1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.SondagesWizard2">
+<summary>
+SondagesWizard2
+</summary>
+</member>
+<member name="M:ISurvey.SondagesWizard2.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:ISurvey.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:ISurvey.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:ISurvey.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:ISurvey.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ISurvey.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member>
+<member name="M:ISurvey.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+<summary>
+CreateInstance
+</summary>
+</member>
+<member name="M:ISurvey.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+<summary>
+GetPropertyValue
+</summary>
+</member>
+<member name="M:ISurvey.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+<summary>
+SetPropertyValue
+</summary>
+</member>
+<member name="M:ISurvey.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+<summary>
+CreateDelegate
+</summary>
+</member>
+<member name="M:ISurvey.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+<summary>
+AddEventHandler
+</summary>
+</member>
+</members>
+</doc>

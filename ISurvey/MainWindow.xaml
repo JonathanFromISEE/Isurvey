@@ -1,0 +1,91 @@
+﻿<Window x:Class="MainWindow"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ISurvey"
+        mc:Ignorable="d"
+        Title="ISurvey" Height="1024" Width="1200"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}" Icon="ISurvey.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#FF04111F" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" HorizontalAlignment="Center" FontSize="41"  FontFamily="Vladimir Script" Margin="15,0,0,0" Foreground="#FFE14045" >ISurvey</Label>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <ListBox SelectedIndex="0" Background="#FF04111F" Name="Menu" SelectionChanged="Menu_SelectionChanged">
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="Tachometer" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Dashboard</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="PencilSquareOutline" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Sondages</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="Users" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Utilisateurs</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="AreaChart" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Rapports</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="Bell" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Notifications</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="MobilePhone" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Appareils</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="HandshakeOutline" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Intégrations</Label>
+                </TextBlock>
+                <TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <fa:ImageAwesome Icon="LifeSaver" Height="30"  VerticalAlignment="Center" Foreground="#FFC9C9C9"/>
+                    </Border>
+                    <Label FontSize="24" Foreground="#FFC9C9C9">Aide</Label>
+                </TextBlock>
+            </ListBox>
+        </Grid>
+        <Frame Grid.Column="1" Grid.Row="1" Name="Navigation" NavigationUIVisibility="Hidden" Source="Pages/DashBoard/DashBoard.xaml" >
+
+        </Frame>
+    </Grid>
+</Window>
